@@ -1,7 +1,7 @@
 # Projeto: carrosséis de Instagram — Rafael F. Simon
 
 Corretor de imóveis (Brasil e EUA, foco em Miami). Perfil: **@rafaelsimoncorretor**
-(confirmar com o usuário: os prints do perfil mostram a marca d'água **@rafa.broker1**).
+(confirmado pelo usuário; usar sempre este @, não @rafa.broker1).
 Frase de apresentação: "Investimentos seguros e planejados nos mercados imobiliários
 mais sólidos do Brasil e dos EUA."
 
