@@ -18,8 +18,8 @@ ${font('Sans', 'Montserrat-400.ttf', 400)}${font('Sans', 'Montserrat-500.ttf', 5
 ${font('Serif', 'Cormorant-300.ttf', 300)}${font('Serif', 'Cormorant-400.ttf', 400)}${font('Serif', 'Cormorant-500.ttf', 500)}
 ${font('Serif', 'Cormorant-400i.ttf', 400, 'italic')}${font('Serif', 'Cormorant-500i.ttf', 500, 'italic')}
 *{margin:0;padding:0;box-sizing:border-box}
-html,body{width:1080px;height:1350px;background:#3a4452}
-.s{position:relative;width:1080px;height:1350px;overflow:hidden;color:#fff;font-family:'Sans',sans-serif;background:#3a4452;text-shadow:0 1px 3px rgba(24,30,38,.75),0 2px 20px rgba(24,30,38,.7)}
+html,body{width:1080px;height:1350px;background:#0e0e0f}
+.s{position:relative;width:1080px;height:1350px;overflow:hidden;color:#fff;font-family:'Sans',sans-serif;background:#0e0e0f;text-shadow:0 1px 3px rgba(0,0,0,.75),0 2px 20px rgba(0,0,0,.7)}
 .photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92;filter:saturate(.85) contrast(1.03)}
 .tint{position:absolute;inset:0}
 .serif{font-family:'Serif',serif;font-weight:500;font-feature-settings:'lnum' 1}
@@ -37,12 +37,12 @@ html,body{width:1080px;height:1350px;background:#3a4452}
 .label{font-size:19px;font-weight:600;letter-spacing:5px;text-transform:uppercase;color:rgba(255,255,255,.9)}
 `;
 
-const bg = (img, tint) => `<img class="photo" src="${f('fotos/' + img)}"><div class="tint" style="background:${tint};opacity:.8"></div><div class="tint" style="background:linear-gradient(180deg,rgba(40,48,59,.7) 0,rgba(40,48,59,0) 260px),linear-gradient(0deg,rgba(38,46,56,.75) 0,rgba(38,46,56,0) 240px)"></div>`;
-// tons cinza-azulados (base #3a4452)
+const bg = (img, tint) => `<img class="photo" src="${f('fotos/' + img)}"><div class="tint" style="background:${tint};opacity:.8"></div><div class="tint" style="background:linear-gradient(180deg,rgba(0,0,0,.7) 0,rgba(0,0,0,0) 260px),linear-gradient(0deg,rgba(0,0,0,.75) 0,rgba(0,0,0,0) 240px)"></div>`;
+// véus pretos sobre as fotos
 const T = {
-  bottom: 'linear-gradient(180deg,rgba(52,62,75,.18) 0%,rgba(52,62,75,.32) 38%,rgba(46,55,67,.86) 66%,rgba(42,50,61,.96) 100%)',
-  full: 'linear-gradient(180deg,rgba(52,62,75,.5) 0%,rgba(48,57,69,.66) 50%,rgba(42,50,61,.9) 100%)',
-  left: 'linear-gradient(90deg,rgba(44,52,63,.9) 0%,rgba(48,57,69,.7) 55%,rgba(52,62,75,.2) 100%)',
+  bottom: 'linear-gradient(180deg,rgba(0,0,0,.18) 0%,rgba(0,0,0,.32) 38%,rgba(0,0,0,.86) 66%,rgba(0,0,0,.96) 100%)',
+  full: 'linear-gradient(180deg,rgba(0,0,0,.5) 0%,rgba(0,0,0,.66) 50%,rgba(0,0,0,.9) 100%)',
+  left: 'linear-gradient(90deg,rgba(0,0,0,.9) 0%,rgba(0,0,0,.7) 55%,rgba(0,0,0,.2) 100%)',
 };
 const head = (n, k) => `<div class="pad" style="top:92px;display:flex;align-items:center;gap:22px"><div class="hair"></div><div class="kicker">${k}</div></div><div class="count">${String(n).padStart(2, '0')} — ${String(TOTAL).padStart(2, '0')}</div>`;
 const foot = () => `<div class="foot"><div class="sig"><img src="${f('assets/perfil.jpg')}"><span>${HANDLE}</span></div><div class="src">Fonte: Forbes Life Brasil</div></div>`;
@@ -61,7 +61,7 @@ ${head(1, 'Bal Harbour · Miami')}
 ${foot()}`);
 
 // 2 — O PROJETO
-slides.push(`${bg('bh5-45.jpg', 'linear-gradient(180deg,rgba(52,62,75,.15) 0%,rgba(50,60,72,.45) 30%,rgba(46,55,67,.86) 48%,rgba(42,50,61,.95) 100%)')}
+slides.push(`${bg('bh5-45.jpg', 'linear-gradient(180deg,rgba(0,0,0,.15) 0%,rgba(0,0,0,.45) 30%,rgba(0,0,0,.86) 48%,rgba(0,0,0,.95) 100%)')}
 ${head(2, 'O projeto')}
 <div class="pad" style="bottom:210px">
   <div class="label">A nova ala</div>
@@ -129,7 +129,7 @@ ${head(5, 'Cronograma')}
 ${foot()}`);
 
 // 6 — ASSINATURA
-slides.push(`${bg('bh4-45.jpg', 'linear-gradient(180deg,rgba(52,62,75,.45) 0%,rgba(46,55,67,.78) 45%,rgba(42,50,61,.93) 100%)')}
+slides.push(`${bg('bh4-45.jpg', 'linear-gradient(180deg,rgba(0,0,0,.45) 0%,rgba(0,0,0,.78) 45%,rgba(0,0,0,.93) 100%)')}
 ${head(6, 'Vamos conversar')}
 <div class="pad" style="top:250px;text-align:center">
   <div class="serif" style="font-size:88px;line-height:1.02;font-weight:500">Quer investir<br>em <span class="it">Miami?</span></div>
