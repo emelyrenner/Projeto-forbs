@@ -19,8 +19,8 @@ ${font('Serif', 'Cormorant-300.ttf', 300)}${font('Serif', 'Cormorant-400.ttf', 4
 ${font('Serif', 'Cormorant-400i.ttf', 400, 'italic')}${font('Serif', 'Cormorant-500i.ttf', 500, 'italic')}
 *{margin:0;padding:0;box-sizing:border-box}
 html,body{width:1080px;height:1350px;background:#3a4452}
-.s{position:relative;width:1080px;height:1350px;overflow:hidden;color:#fff;font-family:'Sans',sans-serif;background:#3a4452}
-.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.74;filter:saturate(.78) contrast(1.03)}
+.s{position:relative;width:1080px;height:1350px;overflow:hidden;color:#fff;font-family:'Sans',sans-serif;background:#3a4452;text-shadow:0 1px 3px rgba(28,34,42,.55),0 2px 18px rgba(28,34,42,.55)}
+.photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.92;filter:saturate(.85) contrast(1.03)}
 .tint{position:absolute;inset:0}
 .serif{font-family:'Serif',serif;font-weight:400;font-feature-settings:'lnum' 1}
 .it{font-family:'Serif',serif;font-style:italic;font-weight:400;color:${GOLD};font-feature-settings:'lnum' 1}
@@ -37,7 +37,7 @@ html,body{width:1080px;height:1350px;background:#3a4452}
 .label{font-size:17px;font-weight:500;letter-spacing:5px;text-transform:uppercase;color:rgba(255,255,255,.7)}
 `;
 
-const bg = (img, tint) => `<img class="photo" src="${f('fotos/' + img)}"><div class="tint" style="background:${tint}"></div><div class="tint" style="background:linear-gradient(180deg,rgba(40,48,59,.7) 0,rgba(40,48,59,0) 260px),linear-gradient(0deg,rgba(38,46,56,.75) 0,rgba(38,46,56,0) 240px)"></div>`;
+const bg = (img, tint) => `<img class="photo" src="${f('fotos/' + img)}"><div class="tint" style="background:${tint};opacity:.8"></div><div class="tint" style="background:linear-gradient(180deg,rgba(40,48,59,.7) 0,rgba(40,48,59,0) 260px),linear-gradient(0deg,rgba(38,46,56,.75) 0,rgba(38,46,56,0) 240px)"></div>`;
 // tons cinza-azulados (base #3a4452)
 const T = {
   bottom: 'linear-gradient(180deg,rgba(52,62,75,.18) 0%,rgba(52,62,75,.32) 38%,rgba(46,55,67,.86) 66%,rgba(42,50,61,.96) 100%)',
